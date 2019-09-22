@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:onClick="adduserClicked"
+        android:background="@drawable/loginbtn"/>
+
+    <Button
+        android:id="@+id/disableuser"
+        android:layout_width="match_parent"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:text="Disable Account"
+        android:onClick="disableduserClicked"
+        android:background="@drawable/loginbtn"/>
+
+    <Button
+        android:id="@+id/deleteusr"
+        android:layout_width="match_parent"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:onClick="deleteuserClicked"
+        android:background="@drawable/loginbtn"/>
+    <Button
+        android:id="@+id/changepass"
+        android:layout_width="match_parent"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:onClick="changepassClicked"
+        android:background="@drawable/loginbtn"/>
+
+</android.support.design.widget.CoordinatorLayout>

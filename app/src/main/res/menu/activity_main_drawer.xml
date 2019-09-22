@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/command_execution"
+            android:icon="@drawable/ic_website"
+            android:title="Command execution"
+            android:textColor="#ffffff"
+            />
+        <item
+            android:id="@+id/server_information"
+            android:icon="@drawable/ic_information"
+            android:title="Server Information"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/macros"
+            android:icon="@drawable/ic_icon"
+            android:title="Macro Collection"
+            android:textColor="#ffffff"/>
+        <item
+            android:id="@+id/iplocation"
+            android:icon="@drawable/ic_location"
+            android:title="IP Location"
+            android:textColor="#ffffff"/>
+    </group>
+</menu>
